@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Homepage extends StatelessWidget{
-  Homepage({super.key});
+class Settings extends StatelessWidget{
+  Settings({super.key});
 
   @override
   Widget build(BuildContext context){

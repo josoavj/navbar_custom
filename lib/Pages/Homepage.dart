@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:navbar_custom/Pages/Files.dart';
+import 'package:navbar_custom/Pages/Info.dart';
+import 'package:navbar_custom/Pages/Settings.dart';
 
 class Homepage extends StatelessWidget{
   Homepage({super.key});
@@ -43,20 +46,23 @@ class Homepage extends StatelessWidget{
             indicatorColor: Colors.white,
             elevation: 0,
             height: 70,
-            selectedIndex: 1,
+            selectedIndex: 0,
             onDestinationSelected: (index){
               switch (index){
                 case 0:
-                   
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepage()));
                 break;
-
+      
                 case 1:
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=> Files()));
                 break;
 
                 case 2:
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Informations()));
                 break;
 
                 case 3:
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Settings()));
                 break;
               }
             },
