@@ -50,7 +50,7 @@ class Homepage extends StatelessWidget{
             onDestinationSelected: (index){
               switch (index){
                 case 0:
-                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepage()));
+                   // This page
                 break;
       
                 case 1:

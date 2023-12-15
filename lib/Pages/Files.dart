@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:navbar_custom/Pages/Homepage.dart';
+import 'package:navbar_custom/Pages/Info.dart';
+import 'package:navbar_custom/Pages/Settings.dart';
 
 class Files extends StatelessWidget{
   Files({super.key});
@@ -47,16 +50,19 @@ class Files extends StatelessWidget{
             onDestinationSelected: (index){
               switch (index){
                 case 0:
-                   
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepage()));
                 break;
-
+      
                 case 1:
+                   // This Page
                 break;
 
                 case 2:
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Informations()));
                 break;
 
                 case 3:
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Settings()));
                 break;
               }
             },
