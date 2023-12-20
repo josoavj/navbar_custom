@@ -33,7 +33,6 @@ class Homepage extends StatelessWidget{
       bottomNavigationBar: Container(
         margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         decoration: BoxDecoration(
-          color: Colors.blueAccent,
           boxShadow: [
           BoxShadow(
               color: Colors.black.withOpacity(0.5),
