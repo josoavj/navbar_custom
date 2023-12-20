@@ -45,11 +45,11 @@ class Files extends StatelessWidget{
             indicatorColor: Colors.blueAccent,
             elevation: 0,
             height: 70,
-            selectedIndex: 2,
+            selectedIndex: 1,
             onDestinationSelected: (index){
               switch (index){
                 case 0:
-                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepage()));
+                   Navigator.pop(context, MaterialPageRoute(builder: (context)=>Homepage()));
                 break;
       
                 case 1:
@@ -57,11 +57,11 @@ class Files extends StatelessWidget{
                 break;
 
                 case 2:
-                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Informations()));
+                   Navigator.pop(context, MaterialPageRoute(builder: (context)=>Informations()));
                 break;
 
                 case 3:
-                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Settings()));
+                   Navigator.pop(context, MaterialPageRoute(builder: (context)=>Settings()));
                 break;
               }
             },
