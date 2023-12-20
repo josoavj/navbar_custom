@@ -42,7 +42,7 @@ class Homepage extends StatelessWidget{
         child: ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: NavigationBar(
-            indicatorColor: Colors.white,
+            indicatorColor: Colors.blueAccent,
             elevation: 0,
             height: 70,
             selectedIndex: 0,
