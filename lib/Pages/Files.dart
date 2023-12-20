@@ -30,6 +30,7 @@ class Files extends StatelessWidget{
             fontWeight: FontWeight.w400),
         ),
       ),
+      // Comment supprimer les transition?
       bottomNavigationBar: Container(
         margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         decoration: BoxDecoration(
@@ -49,7 +50,7 @@ class Files extends StatelessWidget{
             onDestinationSelected: (index){
               switch (index){
                 case 0:
-                   Navigator.pop(context, MaterialPageRoute(builder: (context)=>Homepage()));
+                   Navigator.push(context,  MaterialPageRoute(builder: (context)=>Homepage()));
                 break;
       
                 case 1:
@@ -57,11 +58,11 @@ class Files extends StatelessWidget{
                 break;
 
                 case 2:
-                   Navigator.pop(context, MaterialPageRoute(builder: (context)=>Informations()));
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Informations()));
                 break;
 
                 case 3:
-                   Navigator.pop(context, MaterialPageRoute(builder: (context)=>Settings()));
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=>Settings()));
                 break;
               }
             },
