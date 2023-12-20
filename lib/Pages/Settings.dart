@@ -33,7 +33,6 @@ class Settings extends StatelessWidget{
       bottomNavigationBar: Container(
         margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         decoration: BoxDecoration(
-          color: Colors.blueAccent,
           boxShadow: [
           BoxShadow(
               color: Colors.black.withOpacity(0.5),
@@ -43,7 +42,7 @@ class Settings extends StatelessWidget{
         child: ClipRRect(
           borderRadius: BorderRadius.circular(25),
           child: NavigationBar(
-            indicatorColor: Colors.white,
+            indicatorColor: Colors.blueAccent,
             elevation: 0,
             height: 70,
             selectedIndex: 3,
