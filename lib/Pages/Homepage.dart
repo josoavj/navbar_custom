@@ -5,7 +5,7 @@ import 'package:navbar_custom/Pages/Info.dart';
 import 'package:navbar_custom/Pages/Settings.dart';
 
 class Homepage extends StatelessWidget{
-  Homepage({super.key});
+  const Homepage({super.key});
 
   @override
   Widget build(BuildContext context){
@@ -46,8 +46,8 @@ class Homepage extends StatelessWidget{
             elevation: 0,
             height: 70,
             selectedIndex: 0,
-            onDestinationSelected: (index){
-              switch (index){
+            onDestinationSelected: (indexPage){
+              switch (indexPage){
                 case 0:
                    // This page
                 break;

@@ -5,7 +5,7 @@ import 'package:navbar_custom/Pages/Info.dart';
 import 'package:navbar_custom/Pages/Settings.dart';
 
 class Files extends StatelessWidget{
-  Files({super.key});
+  const Files({super.key});
 
   @override
   Widget build(BuildContext context){
@@ -47,8 +47,8 @@ class Files extends StatelessWidget{
             elevation: 0,
             height: 70,
             selectedIndex: 1,
-            onDestinationSelected: (index){
-              switch (index){
+            onDestinationSelected: (indexPage){
+              switch (indexPage){
                 case 0:
                    Navigator.push(context,  MaterialPageRoute(builder: (context)=>Homepage()));
                 break;

@@ -46,8 +46,8 @@ class Settings extends StatelessWidget{
             elevation: 0,
             height: 70,
             selectedIndex: 3,
-            onDestinationSelected: (index){
-              switch (index){
+            onDestinationSelected: (indexPage){
+              switch (indexPage){
                 case 0:
                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepage()));
                 break;

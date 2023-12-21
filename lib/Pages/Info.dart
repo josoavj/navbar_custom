@@ -5,7 +5,7 @@ import 'package:navbar_custom/Pages/Homepage.dart';
 import 'package:navbar_custom/Pages/Settings.dart';
 
 class Informations extends StatelessWidget{
-  Informations({super.key});
+  const Informations({super.key});
 
   @override
   Widget build(BuildContext context){
@@ -46,8 +46,8 @@ class Informations extends StatelessWidget{
             elevation: 0,
             height: 70,
             selectedIndex: 2,
-            onDestinationSelected: (index){
-              switch (index){
+            onDestinationSelected: (indexPage){
+              switch (indexPage){
                 case 0:
                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepage()));
                 break;
