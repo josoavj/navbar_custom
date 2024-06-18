@@ -1,7 +1,6 @@
 # navbar_custom
 
-A new Flutter project.
-- Author: Josoa886
+- **Author:** [Josoa886](https://github.com/Josoa886)
 - Custom Navbar using Flutter
 
 ## Getting Started
