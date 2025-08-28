@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:navbar_custom/Pages/Homepage.dart';
+import 'Pages/customnav.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,13 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      home: CustomNavbar(),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home:  Homepage(),
     );
   }
 }
